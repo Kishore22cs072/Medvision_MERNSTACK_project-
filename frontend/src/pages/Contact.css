@@ -1,0 +1,40 @@
+.contact-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #10B981;
+  margin-bottom: 25px;
+}
+
+.contact-box {
+  background: #f7fcff;
+  padding: 25px;
+  border-left: 5px solid #10B981;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.contact-line {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #10B981;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

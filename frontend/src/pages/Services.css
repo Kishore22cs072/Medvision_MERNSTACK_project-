@@ -1,0 +1,45 @@
+.services-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.services-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #10B981;
+  margin-bottom: 25px;
+}
+
+.service-card {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  border-left: 5px solid #8B5CF6;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background: #f0f0ff;
+  transform: translateY(-3px);
+}
+
+.service-card h4 {
+  margin: 0 0 10px 0;
+  color: #8B5CF6;
+}
+
+.service-card p {
+  color: #444;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

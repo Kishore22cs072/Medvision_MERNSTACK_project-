@@ -1,0 +1,39 @@
+.about-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #10B981;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.about-list {
+  margin-left: 25px;
+}
+
+.about-list li {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

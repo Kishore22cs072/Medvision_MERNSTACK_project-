@@ -1,0 +1,284 @@
+.results-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f5f9;
+  min-height: 500px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.results-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #6b7280;
+  background: #f8fafc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+.patient-name-section {
+  margin-bottom: 2rem;
+}
+
+.patient-name-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.classification-section {
+  margin-bottom: 2rem;
+}
+
+.classification-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem 0;
+}
+
+.classification-result {
+  display: flex;
+  align-items: center;
+}
+
+.classification-badge {
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accuracy-section {
+  margin-bottom: 2rem;
+}
+
+.accuracy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.accuracy-header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.accuracy-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.accuracy-bar {
+  height: 12px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.accuracy-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1s ease-out;
+  position: relative;
+}
+
+.accuracy-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.accuracy-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.treatment-section {
+  margin-bottom: 2rem;
+}
+
+.treatment-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem 0;
+}
+
+.treatment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.treatment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid  #10b981;
+}
+
+.treatment-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcfce7;
+  border-radius: 50%;
+  margin-top: 1px;
+}
+
+.treatment-item span {
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.actions-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid;
+}
+
+.action-btn.primary {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.action-btn.primary:hover {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.action-btn.secondary {
+  background: white;
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.action-btn.secondary:hover {
+  background: #f9fafb;
+  color: #374151;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+.disclaimer {
+  background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.disclaimer-icon {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.disclaimer p {
+  color: #92400e;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .patient-name-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .classification-badge {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .accuracy-value {
+    font-size: 1.5rem;
+  }
+  
+  .actions-section {
+    flex-direction: column;
+  }
+  
+  .disclaimer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
