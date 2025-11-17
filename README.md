@@ -67,7 +67,7 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-## Screenshots / Demo (Add Yours)
+## Screenshots
 
 Include:
 - Dashboard UI
